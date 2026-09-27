@@ -1,0 +1,113 @@
+{
+  "users": {
+    "user_dishanrjain06_gmail_com": {
+      "uid": "user_dishanrjain06_gmail_com",
+      "email": "dishanrjain06@gmail.com",
+      "name": "Dishu",
+      "role": "Business Owner",
+      "businessType": "retail",
+      "businessName": "Dishu Retail Store",
+      "departments": [
+        "Store Floor & Sales",
+        "Inventory & Stockroom",
+        "Billing & Cashier",
+        "Procurement & Suppliers",
+        "Customer Service",
+        "Facility & Security"
+      ],
+      "createdAt": "2026-09-27T07:35:05.153Z"
+    }
+  },
+  "otps": {
+    "dishanrjain06@gmail.com": {
+      "code": "458669",
+      "expiresAt": 1790500828781
+    },
+    "jaindishan@gmail.com": {
+      "code": "756514",
+      "expiresAt": 1790496253897
+    },
+    "dishan.jain24@vit.edu": {
+      "code": "992244",
+      "expiresAt": 1790500650009
+    },
+    "jaindishan06@gmail.com": {
+      "code": "457874",
+      "expiresAt": 1790503441071
+    }
+  },
+  "tasks": {
+    "user_dishanrjain06_gmail_com": [
+      {
+        "id": "task-muji7gq7-0",
+        "userId": "user_dishanrjain06_gmail_com",
+        "title": "Restock Aisle 3 beverage display shelves",
+        "description": "Move 15 cases of cold drinks from backroom storage to front refrigerated racks.",
+        "assignedTo": "emp-muji7gq7-0",
+        "priority": "High",
+        "status": "In Progress",
+        "deadline": "2026-09-27",
+        "createdAt": "2026-09-22",
+        "updatedAt": "2026-09-26"
+      },
+      {
+        "id": "task-muji7gq7-1",
+        "userId": "user_dishanrjain06_gmail_com",
+        "title": "Verify barcode price tags on new apparel arrival",
+        "description": "Attach promotional discount labels to Q3 autumn jackets inventory.",
+        "assignedTo": "emp-muji7gq7-1",
+        "priority": "Medium",
+        "status": "Pending",
+        "deadline": "2026-09-28",
+        "createdAt": "2026-09-22",
+        "updatedAt": "2026-09-26"
+      },
+      {
+        "id": "task-muji7gq7-2",
+        "userId": "user_dishanrjain06_gmail_com",
+        "title": "Process bulk vendor payment for Supplier #99",
+        "description": "Reconcile invoice with warehouse receipt note before issuing bank transfer.",
+        "assignedTo": "emp-muji7gq7-2",
+        "priority": "Critical",
+        "status": "Pending",
+        "deadline": "2026-09-25",
+        "createdAt": "2026-09-22",
+        "updatedAt": "2026-09-26"
+      }
+    ]
+  },
+  "employees": {
+    "user_dishanrjain06_gmail_com": [
+      {
+        "id": "emp-muji7gq7-0",
+        "userId": "user_dishanrjain06_gmail_com",
+        "name": "Amit Verma",
+        "email": "amitverma@bizflow.com",
+        "role": "Store Floor Supervisor",
+        "department": "Store Floor & Sales",
+        "avatarBg": "bg-indigo-600",
+        "createdAt": "2026-08-28"
+      },
+      {
+        "id": "emp-muji7gq7-1",
+        "userId": "user_dishanrjain06_gmail_com",
+        "name": "Priya Nair",
+        "email": "priyanair@bizflow.com",
+        "role": "Head Cashier",
+        "department": "Billing & Cashier",
+        "avatarBg": "bg-emerald-600",
+        "createdAt": "2026-08-28"
+      },
+      {
+        "id": "emp-muji7gq7-2",
+        "userId": "user_dishanrjain06_gmail_com",
+        "name": "Rahul Joshi",
+        "email": "rahuljoshi@bizflow.com",
+        "role": "Inventory Manager",
+        "department": "Inventory & Stockroom",
+        "avatarBg": "bg-purple-600",
+        "createdAt": "2026-08-28"
+      }
+    ]
+  }
+}
