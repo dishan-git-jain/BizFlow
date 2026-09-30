@@ -68,6 +68,11 @@ export const api = {
     return handleResponse(res);
   },
 
+  getAllUsers: async () => {
+    const res = await fetchWithTimeout(`${API_BASE_URL}/auth/users`);
+    return handleResponse(res);
+  },
+
   updateProfile: async (profileData) => {
     const res = await fetchWithTimeout(`${API_BASE_URL}/auth/profile`, {
       method: 'PUT',

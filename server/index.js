@@ -8,6 +8,7 @@ import authRoutes from './routes/authRoutes.js';
 import taskRoutes from './routes/taskRoutes.js';
 import employeeRoutes from './routes/employeeRoutes.js';
 import presetRoutes from './routes/presetRoutes.js';
+import { initSqlTables } from './db/database.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -15,6 +16,9 @@ const DIST_DIR = path.join(__dirname, '../dist');
 
 const app = express();
 const PORT = process.env.PORT || 5000;
+
+// Initialize SQL Tables if DATABASE_URL or POSTGRES_URL is configured
+initSqlTables().catch(err => console.warn('SQL Init Notice:', err));
 
 // Enable CORS and JSON body parsing
 app.use(cors());

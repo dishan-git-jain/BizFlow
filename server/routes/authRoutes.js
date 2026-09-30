@@ -110,4 +110,25 @@ router.put('/profile', authMiddleware, (req, res) => {
   return res.json({ success: true, user });
 });
 
+// Get All Registered Users (Admin Overview)
+router.get('/users', (req, res) => {
+  const db = readDb();
+  const userList = Object.values(db.users || {}).map(u => ({
+    uid: u.uid,
+    name: u.name,
+    email: u.email,
+    role: u.role,
+    businessType: u.businessType || 'General',
+    createdAt: u.createdAt,
+    tasksCount: (db.tasks[u.uid] || []).length,
+    employeesCount: (db.employees[u.uid] || []).length
+  }));
+
+  return res.json({
+    success: true,
+    totalUsers: userList.length,
+    users: userList
+  });
+});
+
 export default router;
